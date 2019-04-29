@@ -88,10 +88,6 @@ let userFields = {
     }],
     default: null,
   },
-  isPasswordSet: {
-    type: Boolean,
-    default: false,
-  },
   isBlocked: { // blocked by admin
     type: Boolean,
     default: false,
