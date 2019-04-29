@@ -1,11 +1,10 @@
 /*
 @author: Sumeet Kumar
-
 */
 
-const model = require('../models/userModel.js');
+const model = require('../models/languageModel');
 const { errorResponse, successResponse, httpCode } = require('../utils').controllerResponse;
-let fileName = 'userController';
+let fileName = 'languageController';
 
 
 let createNew = function (request, response) {

@@ -3,7 +3,7 @@
 
 */
 
-const model = require('../models/categoryModel.js');
+const model = require('../models/categoryModel');
 const { errorResponse, successResponse, httpCode } = require('../utils').controllerResponse;
 let fileName = 'categoryController';
 

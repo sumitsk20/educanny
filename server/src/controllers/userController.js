@@ -1,10 +1,11 @@
 /*
 @author: Sumeet Kumar
+
 */
 
-const model = require('../models/courseModel.js');
+const model = require('../models/userModel');
 const { errorResponse, successResponse, httpCode } = require('../utils').controllerResponse;
-let fileName = 'courseController';
+let fileName = 'userController';
 
 
 let createNew = function (request, response) {
