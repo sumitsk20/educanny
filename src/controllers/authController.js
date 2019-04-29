@@ -21,10 +21,10 @@ let registerUser = function (request, response) {
     });
 };
 let loginUserByPassword = function (request, response) {
-  if (!request.body.phone || !request.body.password) {
+  if (!request.body.email || !request.body.password) {
     return errorResponse(request, response, httpCode.BAD_REQUEST, false, false, { functionName: 'loginUserByPassword', fileName });
   }
-  UserModel.getByPhone(request.body.phone).then((user) => {
+  UserModel.getByEmail(request.body.email).then((user) => {
     if (bcryptUtil.compareHash(request.body.password, user.password)) {
       let authToken = user.generateAuthToken();
       const responseJson = user.toJSON();
