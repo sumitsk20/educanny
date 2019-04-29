@@ -34,7 +34,7 @@ app.use(require('helmet')());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(process.env.API_VERSION || '/api/v1', require('./routes/'));
+app.use(process.env.API_VERSION || '/api/v1', require('./routes'));
 
 app.use(function (request, response, next) {
   let error = new Error('API route Not Found');

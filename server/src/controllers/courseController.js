@@ -2,9 +2,9 @@
 @author: Sumeet Kumar
 */
 
-const model = require('../models/languageModel.js');
+const model = require('../models/courseModel');
 const { errorResponse, successResponse, httpCode } = require('../utils').controllerResponse;
-let fileName = 'languageController';
+let fileName = 'courseController';
 
 
 let createNew = function (request, response) {

@@ -4,7 +4,7 @@ Summary: This file contains a middleware function that verifies the given JWT an
   to ensure that the session exists.
 */
 const JWT_UTIL = require('../utils').utilJWT;
-const UserModel = require('../models/userModel.js');
+const UserModel = require('../models/userModel');
 const { errorResponse, httpCode } = require('../utils').controllerResponse;
 
 module.exports = function (request, response, next) {

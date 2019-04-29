@@ -11,7 +11,7 @@ const { errorResponse, httpCode } = require('../utils').controllerResponse;
 module.exports = function (request, response, next) {
   let userMessage = 'You should login to perform this action';
   try {
-    if (!request.path.contains('signup') && request.method === 'POST') {
+    if (!request.path.includes('register') && request.method === 'POST') {
       request.body.createdBy = request.user.id;
     }
     next();

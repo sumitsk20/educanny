@@ -17,6 +17,7 @@ let decodeJWT = function (token) {
 };
 
 let verifyJWT = function (token) {
+  console.log(process.env.SECRET_KEY);
   return jwt.verify(token, process.env.SECRET_KEY, options);
 };
 
